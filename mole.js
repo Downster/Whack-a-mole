@@ -21,7 +21,7 @@ function popUpRandomMole() {
   moleHead.classList.remove('wgs__mole-head--hidden');
 
   molesLeft -= 1;
-  document.querySelector('.sb__moles').innerHTML = molesLeft;
+  document.querySelector('.sb__mole').innerHTML = molesLeft;
 
   hideTimeout = setTimeout(() => hideMole(moleHead), popupLength);
 }
@@ -48,11 +48,10 @@ window.addEventListener('DOMContentLoaded', () => {
       clearTimeout(hideTimeout);
       hideMole(event.target);
 
-      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-      // event.target.classList.add('wgs__mole-head--hidden');
 
-      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
-      // event.target.classList.add('wgs__mole-head--whacked');
+      event.target.classList.add('wgs__mole-head--hidden');
+
+      //event.target.classList.add('wgs__mole-head--whacked');
     });
   }
 });
