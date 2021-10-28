@@ -1,4 +1,38 @@
 /* Your code here */
+div {
+  display: inline-block;
+}
+
+.wgs {
+  position: relative;
+  overflow: hidden;
+  height: 482px;
+  width: 640px;
+}
+
+.wgs__mole-head {
+  position: absolute;
+  left: 109px;
+  height: 356px;
+  width: 376px;
+  transition: margin-top 0.25;
+}
+
+.wgs__dirt-pile {
+  position: absolute;
+  bottom: 0px;
+  height: 220px;
+  width: 640px;
+}
+
+.wgs__mole-head--hidden {
+  position: absolute;
+  margin-top: 482px;
+  left: 109px;
+
+}
+
+
 
 
 
